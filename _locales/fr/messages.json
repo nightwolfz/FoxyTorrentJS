@@ -1,0 +1,9 @@
+{
+	"extName": {
+		"message": "Trouve facilement les torrents sur les sites de films populaires comme imdb, allocine, moviefone etc."
+	},
+	"browser_lang": {"message": "Langue du navigateur"},
+	"pref_lang":    {"message": "Langue à utiliser"},
+	"pref_site":    {"message": "Site torrent à utiliser"},
+	"show_hd":      {"message": "Montrer les videos HD (1080p)"}
+}

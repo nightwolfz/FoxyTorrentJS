@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <title>Torrentler</title>
+    <style>
+        * {
+            font-family: tahoma, verdana, arial;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+            background: #eee;
+        }
+
+        h1 {
+            color: #E15200;
+            font-size: 18px;
+        }
+	
+	small, small a {
+	    color: #888;
+	    font-size: 10px;
+	}
+
+        p {
+            color: #444;
+            padding: 2px 0 2px 4px;
+            border: 1px solid #eee;
+            margin: 8px 0;
+            display: block;
+            clear: both;
+        }
+
+        p label {
+
+        }
+
+        p input[type="checkbox"] {
+            margin: 4px 5px 0 0;
+            float: left;
+        }
+
+        p select {
+            margin-top: -2px;
+            margin-right: 0;
+            height: 24px;
+            width: 140px;
+            float: right;
+        }
+
+        #browser_lang {
+            width: 140px;
+            float: right;
+        }
+
+        .main {
+            width: 480px;
+            margin: 0 auto;
+            padding: 15px 15px 2px 15px;
+            background: #fff;
+        }
+
+        button {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>Foxy Torrent options</h1>
+
+    <div>
+        <p><label>Browser language:</label> <b id="browser_lang"></b></p>
+
+        <!--<p>
+          <label for="pref_lang"></label>
+          <select id="pref_lang" name="pref_lang">
+            <option value="en">English</option>
+            <option value="fr">Fran&ccedil;ais</option>
+				</select>
+			  </p>-->
+
+        <p>
+            <label>Prefered torrent sites:</label><br>
+	    <label><input type="checkbox" name="pref_sites" value="thepiratebay.org">thepiratebay.org
+	    <small>(default if nothing else is chosen)</small></label><br>
+	    <label><input type="checkbox" name="pref_sites" value="kickass.to">kickass.to</label><br>
+	    <label><input type="checkbox" name="pref_sites" value="torrenthound.com">torrenthound.com</label><br>
+	    <label><input type="checkbox" name="pref_sites" value="cpasbien.me">cpasbien.me</label><br>
+	    <label><input type="checkbox" name="pref_sites" value="t411.me">t411.me</label><br>
+        </p>
+	
+	<p>
+          <label><input id="show_vostfr" name="show_vostfr" type="checkbox">
+	    Show French movies only (VOSTFR)
+	  </label>
+        </p>
+
+        <!--<p>
+          <label><input id="show_hd" name="show_hd" type="checkbox">
+          Show HD (1080p) videos</label>
+        </p>-->
+    </div>
+    
+    <button id="save_options">Save</button>
+	
+    <br>
+    <small>
+	Got suggestions? Ideas? Problems?
+	<a href="http://foxytorrent.com/integration" target="_blank">We'd like to hear from you!</a>
+    </small>
+    
+</div>
+
+<script src="zepto.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
+

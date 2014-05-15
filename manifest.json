@@ -1,0 +1,53 @@
+{
+    "manifest_version": 2,
+
+    "name"   : "Foxy Torrent (beta)",
+    "version": "0.5",
+
+    "default_locale": "en",
+
+    "page_action": {
+        "default_icon": {
+            "19": "images/icon16.png",
+            "38": "images/icon128.png"
+        }
+    },
+
+    "icons": {
+        "128": "images/icon128.png"
+    },
+
+    "options_page": "options.html",
+
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.imdb.com/*",
+                "http://*.rottentomatoes.com/*",
+                "http://*.allocine.fr/*",
+                "http://*.moviefone.com/*",
+                "http://*.premiere.fr/*",
+                "http://*.cinetrafic.fr/*",
+                "http://*.senscritique.com/*"
+            ],
+            "css"    : ["styles.css"],
+            "js"     : ["data.js", "zepto.min.js", "content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "storage"
+    ],
+
+    "web_accessible_resources": [
+        "images/magnet.gif", 
+        "images/trusted.gif",
+        "images/up.gif", 
+        "images/down.gif",
+        "images/logo_small.png"
+    ],
+
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

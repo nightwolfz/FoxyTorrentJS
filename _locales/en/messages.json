@@ -1,0 +1,9 @@
+{
+	"extName": {
+		"message": "Foxy is the perfect extension for your movies torrents. It s easy to use, smart and always up ! Easily find torrents when visiting popular movie database websites such as IMDB, rottentomatoes, allocine, moviefone etc."
+	},
+	"browser_lang": {"message": "Browser language"},
+	"pref_lang":    {"message": "Prefered language"},
+	"pref_site":    {"message": "Prefered torrent site"},
+	"show_hd":      {"message": "Show HD (1080p) videos"}
+}
